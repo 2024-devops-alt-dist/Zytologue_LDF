@@ -1,7 +1,6 @@
 # Zytologue_LDF
 Base de Données pour Amateurs de la Bière
 
-
 ## 1) Set up the environment for the project
 
 First, make sure to download docker desktop from their site [Docker](https://www.docker.com/).
@@ -14,6 +13,17 @@ The comand is: `docker-compose up`
 Make sure to download the cross-platform database tool [DBeaver](https://dbeaver.io/)
 
 Create a connection to your DB server.
+
+# About the tables
+
+We used the Merise method to create the tables. This consist on differents steps, in which we get as a result the following diagrams
+
+## MCD
+![MCD](./img/MCD.png)
+## MLD
+![MLD](./img/MLD.png)
+## MPD
+![MPD](./img/MPD.png)
 
 ## 3) Create the dabase tables
 The docker-compose file will create for you the database, so it's time for you to create the tables.
