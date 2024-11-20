@@ -40,16 +40,11 @@ CREATE TABLE IF NOT EXISTS beer (
 	bitternes		INTEGER,
 	body			VARCHAR(50),
 	release_date	DATE,
+	photoURL		VARCHAR(250),
 	id_brewery		SERIAL,
 	id_category		SERIAL,
 	foreign key (id_brewery) references brewery(id_brewery) on delete cascade, 
 	foreign key (id_category) references category(id_category)on delete CASCADE
-);
-
-CREATE TABLE IF NOT EXISTS beer_photo (
-	id_beer			SERIAL primary key,
-	photoURL		VARCHAR(250),
-	foreign key (id_beer) references beer(id_beer) on delete cascade
 );
 
 CREATE TABLE IF NOT EXISTS beer_ingredient (
