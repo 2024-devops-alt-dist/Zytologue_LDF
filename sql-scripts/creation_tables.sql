@@ -1,3 +1,4 @@
+\c zytologueDB -- connection to the created database
 
 CREATE TABLE IF NOT EXISTS brewery (
 	id_brewery			SERIAL primary key,
