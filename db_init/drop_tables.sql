@@ -1,6 +1,5 @@
 -- Delete tables that depends on other tables
 DROP TABLE IF EXISTS beer_ingredient CASCADE;
-DROP TABLE IF EXISTS beer_photo CASCADE;
 DROP TABLE IF EXISTS favourite_beer CASCADE;
 DROP TABLE IF EXISTS review CASCADE;
 
