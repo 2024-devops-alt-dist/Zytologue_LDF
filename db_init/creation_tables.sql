@@ -31,12 +31,6 @@ CREATE TABLE IF NOT EXISTS ingredient(
 	provider		VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS beer_photo (
-	id_beer			SERIAL primary key,
-	photoURL		VARCHAR(250),
-	foreign key (id_beer) references beer(id_beer) on delete cascade
-);
-
 CREATE TABLE IF NOT EXISTS beer (
 	id_beer			SERIAL primary key,
 	beer_name		VARCHAR(50)	not null,
@@ -52,6 +46,11 @@ CREATE TABLE IF NOT EXISTS beer (
 	foreign key (id_category) references category(id_category)on delete CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS beer_photo (
+	id_beer			SERIAL primary key,
+	photoURL		VARCHAR(250),
+	foreign key (id_beer) references beer(id_beer) on delete cascade
+);
 
 CREATE TABLE IF NOT EXISTS beer_ingredient (
 	id_beer		SERIAL,
