@@ -18,6 +18,8 @@ Create a connection to your DB server.
 
 We used the Merise method to create the tables. This consist on differents steps, in which we get as a result the following diagrams
 
+## Data Dictionary
+![Dictionary](./img/dictionary.png)
 ## MCD
 ![MCD](./img/MCD.png)
 ## MLD
@@ -43,3 +45,15 @@ The command you can use is: `docker exec -i postgres-container psql -U postgres_
 On the *querys.sql* file you're going to find all the querys to run and test.
 
 The command you can use is: `docker exec -i postgres-container psql -U postgres_user -d zytologueDB < ./sql-scripts/querys.sql`
+
+
+## 6) Retour Projet Maëva 
+
+The instructions to setup the environment are clear and easy to follow through.
+The scripts to create tables and insert data run well. One little remark that can be done is that to run the scripts, an extra step needs to be done compared to what is written on the readme
+
+For the querys, they almost all work with an exception.
+
+Very good work and project :)
+
+[Link to her project repo](https://github.com/2024-devops-alt-dist/zythologue-MC)
