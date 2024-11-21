@@ -50,7 +50,8 @@ The command you can use is: `docker exec -i postgres-container psql -U postgres_
 ## 6) Retour Projet Maëva 
 
 The instructions to setup the environment are clear and easy to follow through.
-The scripts to create tables and insert data run well. One little remark that can be done is that to run the scripts, an extra step needs to be done compared to what is written on the readme
+The scripts to create tables and insert data run well. One little remark that can be done is that to run the scripts, an extra step needs to be done compared to what is written on the readme.
+Another remark is that there is no script or whatsoever to inizialise the tables.
 
 For the querys, they almost all work with an exception.
 
