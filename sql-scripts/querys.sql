@@ -146,6 +146,6 @@ FROM
 WHERE
   b.id_brewery = 11
   -- ## 13 ## Supprimer les photos d'une bière en particulier.
-DELETE FROM beer_photos
+DELETE FROM beer_photo
 WHERE
   id_beer = 11;
