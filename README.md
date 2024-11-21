@@ -31,20 +31,20 @@ We used the Merise method to create the tables. This consist on differents steps
 The docker-compose file will create for you the database, so it's time for you to create the tables.
 Use the *creation_tables.sql* script to do it.
 
-The command you can use is: `docker exec -i postgres-container psql -U postgres_user -d zytologueDB < ./sql-scripts/creation_tables.sql`
+The command you can use is: `docker exec -i postgres_container psql -U postgres_user -d zytologueDB < /Users/user/simplon/brief_docker/Zytologue_LDF/sql-scripts/creation_tables.sql`
 
 NOTE: Make sure to run the command from the root repository of the project
 
 ## 4) Populate your tables
 You can fill the tables with some mock data provided in the *mock_data.sql* file.
 
-The command you can use is: `docker exec -i postgres-container psql -U postgres_user -d zytologueDB < ./sql-scripts/mock_data.sql`
+The command you can use is: `docker exec -i postgres_container psql -U postgres_user -d zytologueDB < /Users/user/simplon/brief_docker/Zytologue_LDF/sql-scripts/mock_data.sql`
 
 ## 5) Run the querys
 
 On the *querys.sql* file you're going to find all the querys to run and test.
 
-The command you can use is: `docker exec -i postgres-container psql -U postgres_user -d zytologueDB < ./sql-scripts/querys.sql`
+The command you can use is: `docker exec -i postgres_container psql -U postgres_user -d zytologueDB < /Users/user/simplon/brief_docker/Zytologue_LDF/sql-scripts/querys.sql`
 
 
 ## 6) Retour Projet Maëva 
